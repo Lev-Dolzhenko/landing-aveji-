@@ -1,0 +1,57 @@
+.header {
+  padding: 12px 0;
+}
+
+.header__row {
+  display: flex;
+  align-items: start;
+}
+
+.header__nav {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+
+  margin-right: 200px;
+  margin-left: auto;
+  padding-left: 70px;
+}
+
+.header__link {
+  position: relative;
+
+  color: rgb(33, 37, 41);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+
+  &::before {
+    content: "";
+    width: 40px;
+    height: 2px;
+    background: rgb(33, 37, 41);
+
+    pointer-events: none;
+
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -70px;
+
+    opacity: 0;
+
+    transition: all 0.2s linear;
+  }
+
+  &:hover::before {
+    opacity: 1;
+    left: -50px;
+  }
+}
+
+.header__phone {
+  color: rgb(33, 37, 41);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+}
