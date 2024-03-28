@@ -1,0 +1,38 @@
+.footer {
+  margin-top: 120px;
+  padding-bottom: 16px;
+}
+.container {
+}
+.footer__top {
+  margin-bottom: 4px;
+
+  color: rgb(33, 37, 41);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+.footer__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer__bottom_socials {
+  display: flex;
+  column-gap: 40px;
+
+  color: rgb(33, 37, 41);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+.footer__bottom_law {
+  color: rgb(33, 37, 41);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  text-transform: uppercase;
+}

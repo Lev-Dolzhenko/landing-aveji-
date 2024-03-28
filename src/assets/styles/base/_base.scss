@@ -40,4 +40,16 @@ a {
   font-size: 48px;
   font-weight: 400;
   line-height: 66px;
+
+  &_work {
+    position: sticky;
+    top: 0;
+  }
+}
+
+.title3 {
+  color: rgb(33, 37, 41);
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 36px;
 }

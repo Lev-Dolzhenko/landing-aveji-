@@ -1,0 +1,49 @@
+.work {
+}
+.container {
+}
+.container_work {
+}
+.work__row {
+  display: flex;
+  justify-content: space-between;
+}
+.work__text {
+  display: flex;
+  justify-content: space-between;
+}
+.work__title {
+}
+
+.work__list {
+  display: flex;
+  align-items: end;
+  flex-direction: column;
+  row-gap: 25px;
+}
+
+.work__item {
+  display: flex;
+  align-items: start;
+
+  max-width: 680px;
+  width: 100%;
+
+  padding-bottom: 22px;
+
+  border-bottom: 1px solid rgb(0, 0, 0);
+
+  position: sticky;
+  top: 0;
+  background-color: white; /* Чтобы элементы не перекрывали друг друга */
+  padding: 20px;
+  margin-bottom: 10px;
+  z-index: 1; /* Ниже чем у work__container */
+}
+.work__item_title {
+  width: 50%;
+}
+
+.work__item_subtitle {
+  width: 50%;
+}

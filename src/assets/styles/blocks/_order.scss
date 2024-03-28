@@ -1,0 +1,63 @@
+.order {
+  margin-top: 120px;
+}
+
+.order__row {
+  display: flex;
+  column-gap: 135px;
+}
+.order__form {
+  display: flex;
+  flex-direction: column;
+}
+.order__label_large {
+  color: rgb(0, 0, 0);
+  font-family: $helvetica;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 48px;
+
+  margin-bottom: 32px;
+}
+.order__label_small {
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+
+  margin-bottom: 90px;
+}
+.order__form_inputs {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+
+  input {
+    padding-bottom: 12px;
+    border-bottom: 1px solid rgb(33, 37, 41);
+
+    color: rgb(33, 37, 41);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+  }
+}
+.order__form_button {
+  margin-top: 24px;
+  margin-bottom: 40px;
+
+  button {
+    padding: 12px 20px;
+    background: rgb(33, 37, 41);
+
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+  }
+}
+.order__form_shops {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+}
