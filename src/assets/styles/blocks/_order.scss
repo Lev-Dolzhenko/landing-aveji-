@@ -54,6 +54,13 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 140%;
+
+    transition: background 0.2s linear;
+
+    &:hover {
+      background: rgba(255, 196, 0, 0.5);
+      color: rgb(33, 37, 41);
+    }
   }
 }
 .order__form_shops {
