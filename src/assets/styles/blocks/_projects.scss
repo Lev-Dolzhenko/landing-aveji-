@@ -52,7 +52,34 @@
     color: rgb(33, 37, 41);
 
     svg line {
-        stroke: rgb(33, 37, 41);
+      stroke: rgb(33, 37, 41);
     }
+  }
+}
+
+.mySwiper_projects {
+  display: none !important;
+}
+
+.swiper-slide_projects {
+  img {
+    width: 100%;
+  }
+}
+
+@include mediaTablet {
+  .projects__row {
+    display: none;
+  }
+  .mySwiper_projects {
+    display: flex !important;
+  }
+
+  .projects__title {
+    margin-bottom: 20px;
+  }
+
+  .projects {
+    margin-top: 48px;
   }
 }

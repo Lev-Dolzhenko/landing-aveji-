@@ -1,5 +1,5 @@
 .reviews {
-    margin-top: 120px;
+  margin-top: 120px;
 }
 .container {
 }
@@ -52,4 +52,30 @@
 .title4 {
 }
 .title4_reviews {
+}
+
+@include mediaTablet {
+  .reviews__wrapper {
+    grid-template-columns: repeat(2, 1fr);
+
+    .reviews__item:last-child {
+      grid-column: span 2;
+    }
+  }
+  .reviews__item {
+    padding: 36px 32px 38px;
+  }
+  .reviews {
+    margin-top: 48px;
+  }
+}
+
+@include mediaSemiTablet {
+  .reviews__wrapper {
+    grid-template-columns: 1fr;
+
+    .reviews__item:last-child {
+      grid-column: unset;
+    }
+  }
 }

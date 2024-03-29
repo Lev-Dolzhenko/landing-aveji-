@@ -25,6 +25,7 @@
 .work__item {
   display: flex;
   align-items: start;
+  column-gap: 10px;
 
   max-width: 680px;
   width: 100%;
@@ -46,4 +47,29 @@
 
 .work__item_subtitle {
   width: 50%;
+}
+
+@include mediaTablet {
+  .work__row {
+    flex-direction: column;
+  }
+
+  .work__list {
+    align-items: start;
+  }
+}
+
+@include mediaSemiTablet {
+  .work__item {
+    flex-direction: column;
+    row-gap: 10px;
+  }
+
+  .work__item_subtitle {
+    width: 100%;
+  }
+
+  .work__list {
+    row-gap: 0;
+  }
 }

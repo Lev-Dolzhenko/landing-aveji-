@@ -68,3 +68,28 @@
   align-items: center;
   column-gap: 8px;
 }
+
+@include mediaTablet {
+  .order__image {
+    display: none;
+  }
+
+  .order__label_large {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+
+  .order__label_small {
+    margin-bottom: 50px;
+  }
+
+  .order {
+    margin-top: 48px;
+  }
+}
+
+@include mediaSemiTablet {
+  .order__label_large {
+    font-size: 28px;
+  }
+}

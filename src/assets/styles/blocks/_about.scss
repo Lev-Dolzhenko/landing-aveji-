@@ -1,5 +1,5 @@
 .about {
-    margin-bottom: 120px;
+  margin-bottom: 120px;
 }
 .container {
 }
@@ -48,5 +48,31 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 140%;
+  }
+}
+
+.about__title_mobile {
+  display: none;
+}
+
+@include mediaTablet {
+  .about__title {
+    display: none;
+  }
+  .about__title_mobile {
+    display: block;
+  }
+  .about__row {
+    flex-direction: column;
+  }
+
+  .about {
+    margin-bottom: 48px;
+  }
+}
+
+@include mediaSemiTablet {
+  .about__row_subtitiles {
+    margin-bottom: 32px;
   }
 }

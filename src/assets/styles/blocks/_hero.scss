@@ -73,3 +73,41 @@
 
   max-width: 450px;
 }
+
+.hero__subtitle_mobile {
+  display: none;
+}
+
+@include mediaTablet {
+  .hero__subtitle {
+    display: none;
+  }
+
+  .hero__subtitle_mobile {
+    display: block;
+
+    margin-bottom: 23px;
+  }
+
+  .hero__row {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .hero__title {
+    margin-bottom: 20px;
+  }
+
+  .hero__image_left {
+    display: none;
+  }
+
+  .hero__wrapper {
+    justify-content: unset;
+  }
+
+  .hero {
+    margin-top: 20px;
+    margin-bottom: 48px;
+  }
+}

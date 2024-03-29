@@ -36,3 +36,17 @@
   line-height: 21px;
   text-transform: uppercase;
 }
+
+@include mediaTablet {
+  .footer {
+    margin-top: 48px;
+  }
+  .footer__top {
+    margin-bottom: 10px;
+  }
+  .footer__bottom {
+    flex-direction: column;
+    align-items: start;
+    row-gap: 10px;
+  }
+}
