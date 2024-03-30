@@ -11,9 +11,11 @@
   "license": "ISC",
   "devDependencies": {
     "css-loader": "^6.10.0",
+    "gsap": "^3.12.5",
     "html-webpack-plugin": "^5.6.0",
     "node-sass": "^9.0.0",
     "sass-loader": "^14.1.1",
+    "split-type": "^0.3.4",
     "style-loader": "^3.3.4",
     "swiper": "^11.1.0",
     "webpack": "^5.91.0",

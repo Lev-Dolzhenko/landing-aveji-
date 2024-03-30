@@ -11,11 +11,12 @@
 }
 .hero__title {
   max-width: 800px;
+
+  overflow: hidden;
 }
 
 .hero__link {
   position: relative;
-
   color: rgb(33, 37, 41);
   font-size: 18px;
   font-weight: 400;
