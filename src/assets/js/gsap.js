@@ -22,21 +22,39 @@ tl.fromTo(".char", { y: 250 }, { y: 0, duration: 0.3, stagger: 0.08 });
 
 tl.fromTo(".hero__link", { opacity: 0 }, { opacity: 1, duration: 0.3 });
 
-gsap.fromTo(
-  ".hero__subtitle ",
-  { y: 100, opacity: 0 },
-  {
-    y: 0,
-    opacity: 1,
-    scrollTrigger: {
-      trigger: ".hero__wrapper",
-      start: "-10% 30%",
-      end: "30% 30%",
-      scrub: true,
-      once: true,
-    },
-  }
-);
+if (window.matchMedia("(max-width: 767px)").matches) {
+  gsap.fromTo(
+    ".hero__subtitle ",
+    { y: 100, opacity: 0 },
+    {
+      y: 0,
+      opacity: 1,
+      scrollTrigger: {
+        trigger: ".hero__wrapper",
+        start: "-40% 30%",
+        end: "-20% 30%",
+        scrub: true,
+        once: true,
+      },
+    }
+  );
+} else {
+  gsap.fromTo(
+    ".hero__subtitle ",
+    { y: 100, opacity: 0 },
+    {
+      y: 0,
+      opacity: 1,
+      scrollTrigger: {
+        trigger: ".hero__wrapper",
+        start: "-10% 30%",
+        end: "30% 30%",
+        scrub: true,
+        once: true,
+      },
+    }
+  );
+}
 
 gsap.fromTo(
   ".hero__image_right",
@@ -227,18 +245,36 @@ gsap.fromTo(
   }
 );
 
-gsap.fromTo(
-  ".order__form",
-  { x: 100, opacity: 0 },
-  {
-    x: 0,
-    opacity: 1,
-    scrollTrigger: {
-      trigger: ".order",
-      start: "top center",
-      end: "30% center",
-      scrub: true,
-      once: true,
-    },
-  }
-);
+if (window.matchMedia("(max-width: 767px)").matches) {
+  gsap.fromTo(
+    ".order__form",
+    { x: 100, opacity: 0 },
+    {
+      x: 0,
+      opacity: 1,
+      scrollTrigger: {
+        trigger: ".order",
+        start: "-10% 70%",
+        end: "30% 70%",
+        scrub: true,
+        once: true,
+      },
+    }
+  );
+} else {
+  gsap.fromTo(
+    ".order__form",
+    { x: 100, opacity: 0 },
+    {
+      x: 0,
+      opacity: 1,
+      scrollTrigger: {
+        trigger: ".order",
+        start: "top center",
+        end: "30% center",
+        scrub: true,
+        once: true,
+      },
+    }
+  );
+}
